@@ -1,0 +1,44 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/FrontEndContact/dist
+/FrontEndContact/dist-server
+/FrontEndContact/tmp
+/FrontEndContact/out-tsc
+
+# dependencies
+/FrontEndContact/node_modules
+
+# IDEs and editors
+/FrontEndContact/.idea
+/FrontEndContact/.project
+/FrontEndContact/.classpath
+/FrontEndContact/.c9/
+/FrontEndContact/*.launch
+/FrontEndContact/.settings/
+/FrontEndContact/*.sublime-workspace
+
+# IDE - VSCode
+/FrontEndContact/.vscode/*
+/FrontEndContact/!.vscode/settings.json
+/FrontEndContact/!.vscode/tasks.json
+/FrontEndContact/!.vscode/launch.json
+/FrontEndContact/!.vscode/extensions.json
+
+# misc
+/FrontEndContact/.sass-cache
+/FrontEndContact/connect.lock
+/FrontEndContact/coverage
+/FrontEndContact/libpeerconnection.log
+/FrontEndContact/npm-debug.log
+/FrontEndContact/yarn-error.log
+/FrontEndContact/testem.log
+/FrontEndContact/typings
+
+# e2e
+/FrontEndContact/e2e/*.js
+/FrontEndContact/e2e/*.map
+
+# System Files
+/FrontEndContact/.DS_Store
+/FrontEndContact/Thumbs.db
