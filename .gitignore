@@ -1,5 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+###############3###
+#Front End Contact#
+############3######
+
 # compiled output
 /FrontEndContact/dist
 /FrontEndContact/dist-server
@@ -42,3 +46,33 @@
 # System Files
 /FrontEndContact/.DS_Store
 /FrontEndContact/Thumbs.db
+
+##################
+#Back End Contact#
+##################
+
+target/
+/BackEndContact/!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+/BackEndContact/.apt_generated
+/BackEndContact/.classpath
+/BackEndContact/.factorypath
+/BackEndContact/.project
+/BackEndContact/.settings
+/BackEndContact/.springBeans
+/BackEndContact/.sts4-cache
+
+### IntelliJ IDEA ###
+/BackEndContact/.idea
+/BackEndContact/*.iws
+/BackEndContact/*.iml
+/BackEndContact/*.ipr
+
+### NetBeans ###
+/BackEndContact/nbproject/private/
+/BackEndContact/build/
+/BackEndContact/nbbuild/
+/BackEndContact/dist/
+/BackEndContact/nbdist/
+/BackEndContact/.nb-gradle/
