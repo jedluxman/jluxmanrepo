@@ -10,6 +10,10 @@ import { ContactService } from '../../service/contact.service';
 export class FormContactComponent implements OnInit {
 
   private contact = new Contact();
+  private contactError:Contact;
+  private isCreated:boolean=false;
+
+
   constructor(private contactService_:ContactService) { }
 
   ngOnInit() {
@@ -19,7 +23,14 @@ export class FormContactComponent implements OnInit {
     this.contactService_.createContact(this.contact).subscribe(
         data=>{
         console.log(data);
+          this.isCreated = true;
+          this.contact = new Contact();
       },error=>{
+        this.contactError = error.error;
+        this.isCreated = false;
+        if(error.status==409){
+          this.isCreated = false;
+        }
         console.log(error);
       }
     )

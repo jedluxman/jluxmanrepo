@@ -1,8 +1,11 @@
 <main>
   <div class="container" style="height:1300px;">
     <div class="row mt-5 pt-5">
-      <div class="col text-center">
-        <h2>Contact Form content</h2>
+      <div class="col">
+        <h2 class="text-center">Contact Form content</h2>
+        <div class="alert alert-success col-10" *ngIf="isCreated">
+          Congratulation user created!
+        </div>
         <!--Contact form-->
         <form (ngSubmit)="createContact()">
           <div class="form-group">
