@@ -13,8 +13,8 @@ export class ContactService {
     return this._http.get<Contact[]>(this.baseurl_+'/contacts',this.httpheader_)
   }
 
-  /*getContacts(): Observable<Contact[]>{
-   return this._http.get<Contact[]>(this.baseUrl+'/contacts',this.httpheader);
-   }*/
+  createContact(contact){
+    return this._http.post(this.baseurl_+'/contacts',contact,this.httpheader_)
+  }
 
 }
